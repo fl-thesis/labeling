@@ -42,18 +42,18 @@ Gli script di avvio scaricano automaticamente le immagini Docker preconfigurate 
 
 #### Avvio CPA
 ```bash
-./run_cpa.sh
+bash run_cpa.sh
 ```
 
 #### Avvio ROG  
 ```bash
-./run_rog.sh
+bash run_rog.sh
 ```
 
 #### Avvio simultaneo (entrambi gli scenari)
 ```bash
-./run_cpa.sh
-./run_rog.sh
+bath run_cpa.sh
+bash run_rog.sh
 ```
 
 ### Funzionalità degli script
@@ -96,7 +96,7 @@ Dopo l'avvio degli script:
 
    #### Metodo 1: Tramite Docker Desktop
    1. Apri **Docker Desktop** → **Containers**
-   2. Seleziona il container backend (`cpa-backend-1` o `rog-backend-1`)
+   2. Seleziona il container backend (`cpa-backend` o `rog-backend`)
    3. Vai su **"Files"** → **"Browse files"**
    4. Naviga su `/app/reconstructed_labels.csv`
    5. Clicca su **"Download"**
@@ -104,10 +104,10 @@ Dopo l'avvio degli script:
    #### Metodo 2: Da terminale
    ```bash
    # Esportazione etichette CPA
-   docker cp cpa-backend-1:/app/reconstructed_labels.csv ./cpa_labels.csv
+   docker cp cpa-backend:/app/reconstructed_labels.csv ./cpa_labels.csv
 
    # Esportazione etichette ROG  
-   docker cp rog-backend-1:/app/reconstructed_labels.csv ./rog_labels.csv
+   docker cp rog-backend:/app/reconstructed_labels.csv ./rog_labels.csv
 
    # Verifica dei nomi container attivi
    docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
