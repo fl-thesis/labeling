@@ -1,6 +1,6 @@
 # Framework di Etichettatura Immagini CPA/ROG
 
-Framework professionale per l'etichettatura di immagini relative agli attacchi CPA (Correlation Power Analysis) e ROG (Return-Oriented Gadgets) attraverso applicazioni web containerizzate. Il sistema supporta l'esecuzione simultanea di entrambi gli scenari con interfacce web indipendenti.
+Framework professionale per l'etichettatura di immagini relative agli attacchi CPA e ROG attraverso applicazioni web containerizzate. Il sistema supporta l'esecuzione simultanea di entrambi gli scenari con interfacce web indipendenti.
 
 ## Caratteristiche principali
 
