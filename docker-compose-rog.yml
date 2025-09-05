@@ -1,0 +1,12 @@
+name: labeling-rog
+services:
+    backend:
+        image: gparrella/rog-backend:latest
+        ports:
+            - "5001:5000"
+        container_name: rog-backend
+    frontend:
+        image: gparrella/rog-frontend:latest
+        ports:
+            - "8081:80"
+        container_name: rog-frontend

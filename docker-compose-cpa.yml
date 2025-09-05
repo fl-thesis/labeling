@@ -1,0 +1,12 @@
+name: labeling-cpa
+services:
+    backend:
+        image: gparrella/cpa-backend:latest
+        ports:
+            - "5000:5000"
+        container_name: cpa-backend
+    frontend:
+        image: gparrella/cpa-frontend:latest
+        ports:
+            - "8080:80"
+        container_name: cpa-frontend
