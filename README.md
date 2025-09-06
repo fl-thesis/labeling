@@ -1,6 +1,6 @@
 # Framework di Etichettatura Immagini CPA/ROG
 
-Framework professionale per l'etichettatura di immagini relative agli attacchi CPA e ROG attraverso applicazioni web containerizzate. Il sistema supporta l'esecuzione simultanea di entrambi gli scenari con interfacce web indipendenti.
+Framework per l'etichettatura di immagini relative agli attacchi CPA e ROG attraverso applicazioni web containerizzate. Il sistema supporta l'esecuzione simultanea di entrambi gli scenari con interfacce web indipendenti.
 
 ## Caratteristiche principali
 
@@ -32,7 +32,7 @@ Il framework è composto da due stack indipendenti che **possono essere eseguiti
 
 ---
 
-## 🚀 Modalità 1: Avvio rapido
+## 🚀 Avvio rapido
 
 Utilizzare questa modalità per iniziare immediatamente l'etichettatura senza configurazioni aggiuntive.
 
@@ -52,7 +52,7 @@ bash run_rog.sh
 
 #### Avvio simultaneo (entrambi gli scenari)
 ```bash
-bath run_cpa.sh
+bash run_cpa.sh
 bash run_rog.sh
 ```
 
@@ -77,7 +77,7 @@ Dopo l'avvio degli script:
 
 1. **Accesso iniziale**
    - Accedi all'URL dello scenario desiderato
-   - Inserisci il tuo username identificativo
+   - Inserisci il tuo username identificativo (usa sempre lo stesso per riprendere l'etichettatura dal punto in cui eri in precedenza)
    - Conferma per iniziare la sessione
 
 2. **Processo di etichettatura**
@@ -87,7 +87,7 @@ Dopo l'avvio degli script:
 
 3. **NOTA: Salvataggio del progresso**
    - Utilizza il pulsante **"Save Progress"** regolarmente
-   - **Obbligatorio** prima della chiusura dell'applicazione
+   - **⚠️Obbligatorio⚠️** prima della chiusura dell'applicazione
    - Il salvataggio preserva tutto il lavoro svolto
 
 4. **Esportazione delle etichette**
@@ -125,25 +125,7 @@ Entrambe le applicazioni supportano modalità di confronto per analisi comparati
 
 ## 🛑 Gestione dei container
 
-### Arresto dei servizi
-
-#### Arresto singolo scenario
-```bash
-# Arresto CPA
-docker compose -f cpa/docker-compose.yml down
-
-# Arresto ROG
-docker compose -f rog/docker-compose.yml down
-```
-
-#### Arresto di tutti i servizi
-```bash
-# Arresto completo di tutti i container del progetto
-docker compose -f cpa/docker-compose.yml down
-docker compose -f rog/docker-compose.yml down
-```
-
-#### Arresto tramite Docker Desktop
+### Arresto tramite Docker Desktop (consigliato)
 1. Apri **Docker Desktop**
 2. Vai alla sezione **"Containers"**
 3. Individua i container `cpa-*` o `rog-*`
