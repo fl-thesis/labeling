@@ -80,7 +80,7 @@ Dopo l'avvio degli script:
    - Inserisci il tuo username identificativo (usa sempre lo stesso per riprendere l'etichettatura dal punto in cui eri in precedenza)
    - Conferma per iniziare la sessione
 
-2. **Processo di etichettatura**
+2. **Processo di etichettatura. NOTA: USARE LA COMPARISON MODE, NON LA LABELING MODE**
    - Analizza l'immagine visualizzata
    - Applica l'etichetta appropriata secondo le linee guida
    - Procedi all'immagine successiva
